@@ -19,7 +19,7 @@ CyferFate is hosted under the auspices of CyferNet AI and adheres to a robust te
 
 ---
 
-## Getting Started
+## Getting Started 
 
 CyferFate can be deployed on a single node for testing or scaled across multiple nodes to achieve enterprise-level performance, reliability, and manageability. Choose the deployment approach that best matches your environment:
 
