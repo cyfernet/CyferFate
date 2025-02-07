@@ -9,111 +9,169 @@
   <img src="./doc/images/FATE_logo.png">
 </div>
 
+# CyferFate: CyferNet AI’s Decentralized Federated Learning Framework
 
-FATE (Federated AI Technology Enabler) is the world's first industrial grade federated learning open source framework to enable enterprises and institutions to collaborate on data while protecting data security and privacy. 
-It implements secure computation protocols based on homomorphic encryption and multi-party computation (MPC). 
-Supporting various federated learning scenarios, FATE now provides a host of federated learning algorithms, including logistic regression, tree-based algorithms, deep learning and transfer learning.
+CyferFate is CyferNet AI’s flagship open-source framework designed to empower enterprises and institutions to collaboratively train AI models on distributed data while ensuring top-tier data security and privacy. By integrating state-of-the-art secure computation protocols—including homomorphic encryption and multi-party computation (MPC)—CyferFate supports diverse federated learning scenarios ranging from logistic regression and tree-based algorithms to deep learning and transfer learning.
 
+CyferFate is hosted under the auspices of CyferNet AI and adheres to a robust technical charter that defines contribution responsibilities and project oversight. You can review the [CyferFate Technical Charter](https://github.com/CyferNetAI/CyferFate-Community/blob/master/CyferFate_Technical_Charter.pdf) for detailed guidelines on technical contributions and community governance.
 
-FATE is an open source project hosted by Linux Foundation. The [Technical Charter](https://github.com/FederatedAI/FATE-Community/blob/master/FATE_Project_Technical_Charter.pdf) sets forth the responsibilities and procedures for technical contribution to, and oversight of, the FATE (“Federated AI Technology Enabler”) Project. 
+<https://cyferfate.docs.io/en/latest>
 
-<https://fate.readthedocs.io/en/latest>
-
+---
 
 ## Getting Started
-FATE can be deployed on a single node or on multiple nodes. Choose the deployment approach which matches your environment.
-[Release version can be downloaded here.](https://github.com/FederatedAI/FATE/wiki/Download)
 
+CyferFate can be deployed on a single node for testing or scaled across multiple nodes to achieve enterprise-level performance, reliability, and manageability. Choose the deployment approach that best matches your environment:
 
-### Version >= 2.0
-### Standalone deployment
+- **Release Versions:**  
+  Download the latest release from our [CyferFate Release Portal](https://github.com/CyferNetAI/CyferFate/wiki/Download).
 
-- Deploying FATE on a single node via PyPI, pre-built docker images or installers. It is for simple testing purposes. Refer to this [guide](./deploy/standalone-deploy/).
+### Version ≥ 2.0
 
-### Cluster deployment
-Deploying FATE to multiple nodes to achieve scalability, reliability and manageability.
-- [Cluster deployment by CLI](./deploy/cluster-deploy): Using CLI to deploy a FATE cluster.
-- [Docker-Compose deployment](./deploy/docker-compose): Using docker-compose to deploy FATE.
+#### Standalone Deployment
 
-### Quick Start
-- [Training Demo with Only FATE Installed From Pypi](doc/2.0/fate/ml)
-- [Training Demo with Both FATE AND FATE-Flow Installed From Pypi](doc/2.0/fate/quick_start.md)
+- **Single-Node Deployment:**  
+  Deploy CyferFate on a single node using our PyPI package, pre-built Docker images, or dedicated installers. This approach is ideal for initial testing and development. Refer to our [Standalone Deployment Guide](./deploy/standalone-deploy/) for detailed instructions.
 
-### Advanced Use
-- [Train & Predict for Homo Mode](./doc/2.0/fate/homo_quick_start.md)
-- [Run ML Launchers](./doc/README.md#run-ml-modulessince-v200)
+#### Cluster Deployment
 
-### More examples
-- [ML examples](examples/launchers)
-- [PipeLine examples](examples/pipeline)
+- **Multi-Node Deployment:**  
+  For large-scale, production-grade federated learning, deploy CyferFate across multiple nodes. Our framework supports:
+  - **CLI-Based Cluster Deployment:** Use command-line tools to orchestrate a CyferFate cluster.
+  - **Docker-Compose Deployment:** Leverage Docker Compose for rapid and reliable cluster setup.
+
+---
+
+## Quick Start
+
+- **Training Demo – CyferFate Only:**  
+  Follow our [Training Demo with CyferFate Installed from PyPI](doc/2.0/cyferfate/ml) for a streamlined introduction.
+- **Integrated Deployment – CyferFate & CyferFlow:**  
+  For a complete ecosystem experience, see our [Quick Start Guide for CyferFate and CyferFlow](doc/2.0/cyferfate/quick_start.md).
+
+---
+
+## Advanced Use
+
+- **Privacy-Preserving (Homo Mode):**  
+  Learn how to train and predict securely with CyferFate’s homo mode by following the [CyferFate Homo Mode Guide](./doc/2.0/cyferfate/homo_quick_start.md).
+- **Running Advanced ML Modules:**  
+  Explore how to run custom ML launchers with CyferFate by referring to our [Advanced ML Launcher Documentation](./doc/README.md#run-ml-modulessince-v200).
+
+### More Examples
+
+- **Machine Learning Examples:**  
+  Check out our [ML Examples](examples/launchers) for practical applications.
+- **Pipeline Examples:**  
+  Explore our [Pipeline Examples](examples/pipeline) that demonstrate end-to-end federated modeling.
+
+---
 
 ## Documentation
 
-### FATE Design
-- [Architecture](./doc/architecture/README.md): Building Unified and Standardized API for Heterogeneous Computing Engines Interconnection
-- [FATE Algorithm Components](./doc/2.0/fate/components/README.md): Building Standardized Algorithm Components for different Scheduling Engines
-- [OSX (Open Site Exchange)](./doc/2.0/osx/osx.md): Building Open Platform for Cross-Site Communication Interconnection
-- [FATE-Flow](https://github.com/FederatedAI/FATE-Flow/blob/main/doc/fate_flow.md): Building Open and Standardized Scheduling Platform for Scheduling Interconnection 
-- [PipeLine Design](https://github.com/FederatedAI/FATE-Client/blob/main/doc/pipeline.md): Building Scalable Federated DSL for Application Layer Interconnection And Providing Tools For Fast Federated Modeling
-- [RoadMap](./doc/images/roadmap.png)
-- [Paper & Conference](./doc/resources/README.md)
+### CyferFate Design
 
-### Develop Guide
-- [Dag Usage Guide](./doc/2.0/fate/dag.md)
-- [Component Develop Guide](./doc/develop_guide/component_guide.md)  
+- **Architecture:**  
+  Discover how CyferFate builds a unified and standardized API to interconnect heterogeneous computing engines in our [Architecture Documentation](./doc/architecture/README.md).
+- **Algorithm Components:**  
+  Learn about the standardized components that power CyferFate’s secure federated algorithms in [CyferFate Algorithm Components](./doc/2.0/cyferfate/components/README.md).
+- **Cross-Site Collaboration (CyferOSX):**  
+  See how CyferFate facilitates open platform communication for decentralized learning in our [CyferOSX Guide](./doc/2.0/osx/osx.md).
+- **CyferFlow Integration:**  
+  For scheduling and orchestrating secure federated tasks, review [CyferFlow Documentation](https://github.com/CyferNetAI/CyferFlow/blob/main/doc/cyfer_flow.md).
+- **Pipeline Design:**  
+  Understand how CyferFate’s scalable federated DSL accelerates modeling with our [Pipeline Design Guide](https://github.com/CyferNetAI/CyferFate-Client/blob/main/doc/pipeline.md).
+- **RoadMap & Resources:**  
+  See our [RoadMap](./doc/images/roadmap.png) and review related papers and conference materials in [CyferFate Resources](./doc/resources/README.md).
 
+### Developer Guides
+
+- **DAG Usage:**  
+  Get started with designing federated learning workflows using our [DAG Usage Guide](./doc/2.0/cyferfate/dag.md).
+- **Component Development:**  
+  Follow our [Component Development Guide](./doc/develop_guide/component_guide.md) to contribute new modules to CyferFate.
+
+---
 
 ## Related Repositories (Projects)
-- [KubeFATE](https://github.com/FederatedAI/KubeFATE): An operational tool for the FATE platform using cloud native technologies such as containers and Kubernetes.
-- [FATE-Flow](https://github.com/FederatedAI/FATE-Flow): A multi-party secure task scheduling platform for federated learning pipeline.
-- [FATE-Board](https://github.com/FederatedAI/FATE-Board): A suite of visualization tools to explore and understand federated models easily and effectively.
-- [FATE-Serving](https://github.com/FederatedAI/FATE-Serving): A high-performance and production-ready serving system for federated learning models.
-- [FATE-Cloud](https://github.com/FederatedAI/FATE-Cloud): An infrastructure for building and managing industrial-grade federated learning cloud services.
-- [EggRoll](https://github.com/WeBankFinTech/eggroll): A simple high-performance computing framework for (federated) machine learning.
-- [AnsibleFATE](https://github.com/FederatedAI/AnsibleFATE): A tool to optimize and automate the configuration and deployment operations via Ansible.
-- [FATE-Builder](https://github.com/FederatedAI/FATE-Builder): A tool to build package and docker image for FATE and KubeFATE.
-- [FATE-Client](https://github.com/FederatedAI/FATE-Client): A tool to enable fast federated modeling tasks for FATE.
-- [FATE-Test](https://github.com/FederatedAI/FATE-Test): An automated testing tool for FATE, including tests and benchmark comparisons.
-- [FATE-LLM](https://github.com/FederatedAI/FATE-LLM/blob/main/README.md) : A framework to support federated learning for large language models(LLMs).
 
-## Governance 
+- **CyferKube:**  
+  An operational tool for deploying CyferFate on cloud-native infrastructures such as Kubernetes. [CyferKube](https://github.com/CyferNetAI/CyferKube)
+- **CyferFlow:**  
+  A secure task scheduling platform designed for decentralized federated learning pipelines. [CyferFlow](https://github.com/CyferNetAI/CyferFlow)
+- **CyferBoard:**  
+  Visualization tools for exploring and understanding your federated models. [CyferBoard](https://github.com/CyferNetAI/CyferBoard)
+- **CyferServing:**  
+  A high-performance serving system for models trained with CyferFate. [CyferServing](https://github.com/CyferNetAI/CyferServing)
+- **CyferCloud:**  
+  Infrastructure tools for managing federated learning cloud services with CyferFate. [CyferCloud](https://github.com/CyferNetAI/CyferCloud)
+- **EggRoll:**  
+  A lightweight, high-performance computing framework for federated learning—compatible with CyferFate. [EggRoll](https://github.com/WeBankFinTech/eggroll)
+- **AnsibleCyfer:**  
+  Tools to automate configuration and deployment of CyferFate clusters using Ansible. [AnsibleCyfer](https://github.com/CyferNetAI/AnsibleCyfer)
+- **CyferBuilder:**  
+  Build packages and Docker images for rapid CyferFate deployment. [CyferBuilder](https://github.com/CyferNetAI/CyferBuilder)
+- **CyferClient:**  
+  A fast modeling tool to enable decentralized federated learning tasks in CyferFate. [CyferClient](https://github.com/CyferNetAI/CyferClient)
+- **CyferTest:**  
+  An automated testing suite for benchmarking CyferFate performance and security. [CyferTest](https://github.com/CyferNetAI/CyferTest)
+- **CyferLLM:**  
+  A framework to support federated learning for large language models within the CyferFate ecosystem. [CyferLLM](https://github.com/CyferNetAI/CyferLLM)
 
-[FATE-Community](https://github.com/FederatedAI/FATE-Community) contains all the documents about how the community members cooperate with each other. 
+---
 
-- [GOVERNANCE.md](https://github.com/FederatedAI/FATE-Community/blob/master/GOVERNANCE.md) documents the governance model of the project. 
-- [Minutes](https://github.com/FederatedAI/FATE-Community/blob/master/meeting-minutes) of working meetings
-- [Development Process Guidelines](https://github.com/FederatedAI/FATE-Community/blob/master/FederatedAI_PROJECT_PROCESS_GUIDELINE.md) 
-- [Security Release Process](https://github.com/FederatedAI/FATE-Community/blob/master/SECURITY.md) 
+## Governance
 
+The [CyferFate-Community](https://github.com/CyferNetAI/CyferFate-Community) repository houses all documentation on community collaboration, including:
+
+- **Governance Model:**  
+  Refer to [GOVERNANCE.md](https://github.com/CyferNetAI/CyferFate-Community/blob/master/GOVERNANCE.md) for project governance details.
+- **Meeting Minutes:**  
+  Review the minutes from our working sessions in [Community Meeting Minutes](https://github.com/CyferNetAI/CyferFate-Community/blob/master/meeting-minutes).
+- **Development Process Guidelines:**  
+  Follow the [Development Process Guidelines](https://github.com/CyferNetAI/CyferFate-Community/blob/master/CyferFate_PROJECT_PROCESS_GUIDELINE.md) for contribution standards.
+- **Security Release Process:**  
+  See our [Security Guidelines](https://github.com/CyferNetAI/CyferFate-Community/blob/master/SECURITY.md) for secure development practices.
+
+---
 
 ## Getting Involved
 
 ### Contributing
-FATE is an inclusive and open community. We welcome developers who are interested in making FATE better! Contributions of all kinds are welcome. Please refer to the general [contributing guideline](https://github.com/FederatedAI/FATE-Community/blob/master/CONTRIBUTING.md) of all FATE projects and the contributing guideline of each repository.
 
-### Mailing list 
+CyferFate welcomes contributions from developers worldwide. Whether you’re submitting code, reporting bugs, or suggesting new features, please review our [Contributing Guidelines](https://github.com/CyferNetAI/CyferFate-Community/blob/master/CONTRIBUTING.md) to get started.
 
-Join the FATE user [mailing list](https://groups.io/g/Fate-FedAI), and stay connected with the community and learn about the latest news and information of the FATE project. Discussion and feedback on the FATE project are welcome.
+### Mailing List
 
+Join the CyferFate user mailing list to stay updated on the latest developments, share feedback, and connect with the community. Visit our [CyferFate Mailing List](https://groups.io/g/CyferFateFedAI) for more information.
 
-### Bugs or feature requests
+### Bug Reports and Feature Requests
 
-File bugs and features requests via the [GitHub issues](https://github.com/FederatedAI/FATE/issues). If you need help, ask your questions via the mailing list.
+File issues or feature requests via our [GitHub Issues Page](https://github.com/CyferNetAI/CyferFate/issues). For support or queries, reach out via our mailing list.
 
-### Contact emails
+### Contact
 
-Maintainers: FedAI-maintainers @ groups.io
+- **Maintainers:**  
+  CyferFate-maintainers [at] groups.io  
+- **Security Inquiries:**  
+  CyferFate-security [at] groups.io
 
-Security Response Committee: FATE-security @ groups.io
+### Social Media
 
-### Twitter
-
-Follow us on twitter [@FATEFedAI](https://twitter.com/FateFedAI)
+Follow us on Twitter: [@CyferFateAI](https://twitter.com/CyferFateAI)
 
 ### FAQ
-https://github.com/FederatedAI/FATE/wiki
 
+For common questions and troubleshooting, please visit our [CyferFate FAQ](https://github.com/CyferNetAI/CyferFate/wiki).
+
+---
 
 ## License
-[Apache License 2.0](LICENSE)
 
+CyferFate is released under the [Apache License 2.0](LICENSE).
+
+---
+
+By leveraging a robust, open-source framework with advanced secure computation protocols, CyferFate sets a new standard for federated learning—empowering organizations to collaboratively build powerful AI models without compromising data privacy.
+
+This interconnected ecosystem of tools and documentation ensures that CyferFate remains at the forefront of secure, scalable, and privacy-preserving federated learning.
